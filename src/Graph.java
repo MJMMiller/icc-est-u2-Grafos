@@ -16,11 +16,22 @@ public class Graph {
     }
 
     public void addEdge(Node src, Node dest){
-
+        src.addNeighbords(dest);
+        dest.addNeighbords(src);
     }
 
-    public void printGrapg(){
+    public void addEdgeUni(Node src, Node dest){
+        src.addNeighbords(dest);
+    }
 
+    public void printGraph(){
+        for (Node node : nodes) {
+            System.out.print("Node " + node.getValue() + ": ");
+            for (Node vecino : node.getNeighbors()) {
+                System.out.print(vecino.getValue() + " ->");
+            }
+            System.out.println();
+        }
     }
 
     public void getDFS(Node startNode){

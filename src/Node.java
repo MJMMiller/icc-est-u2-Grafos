@@ -12,15 +12,15 @@ public class Node {
     }
 
     public int getValue(){
-        return 0;
+        return value;
     }
 
     public Set<Node> getNeighbors(){
         return neighbors;
     }
 
-    public void addNeighbords(Node neighbors){
-
+    public void addNeighbords(Node neighbor){
+        this.neighbors.add(neighbor);
     }
     
 }

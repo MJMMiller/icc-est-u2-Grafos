@@ -56,10 +56,18 @@ App.java
 
 ---
 
-## 🧑‍💻 Ejemplo de Salida
+## 🧑‍💻 Salida
 
 ```
-Hola mundo
+Node 2: 1 ->3 ->
+Node 1: 2 ->4 ->0 ->8 ->
+Node 3: 2 ->4 ->9 ->7 ->0 ->
+Node 4: 1 ->3 ->
+Node 9: 3 ->
+Node 7: 3 ->8 ->
+Node 0: 1 ->3 ->5 ->
+Node 8: 1 ->7 ->
+Node 5: 0 ->
 ```
 
 ---
